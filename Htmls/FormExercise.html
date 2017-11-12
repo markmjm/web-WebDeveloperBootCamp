@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Register</title>
+  </head>
+  <body>
+    <h1>Register</h1>
+    
+    
+    <form action="" method="get">
+      <label for="first-name">First name</label>
+      <input id="first-name" type="text" name="firstname" placeholder="John" required><br>
+      <label for="last-name">Last name</label>
+      <input id="last-name" type="text" name="lastname" placeholder="Smith" required><br>
+      <br>
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="male" value="male">
+      <label for="female">Femal</label>
+      <input type="radio" name="gender" id="female" value="female">
+      <label for="other">Other</label>
+      <input type="radio" name="gender" id="other" value="other">
+      <br>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="your email" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="your password"
+             pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+             title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+      <br>
+      <label for="birthday" >Birthday</label>
+      <select name="month" name="birthdayMonth" id="birthday">
+        <option value="month">Month</option>
+        <script type="application/javascript">
+        for(let i = 1; i<13; i++){
+          document.write("<option value=" + i + ">" + i + "</option>" )
+        }
+        </script>
+      </select>
+      <select name="day" name="birthdayDay">
+        <option value="day">Day</option>
+        <script type="application/javascript">
+          for(let i = 1; i<31; i++){
+            document.write("<option value=" + i + ">" + i + "</option>" )
+          }
+      </script>
+      </select>
+        <select name="year" name="birthdayYear">
+          <option value="year">Year</option>
+          <script type="application/javascript">
+            for(let i = 1960; i<2017; i++){
+              document.write("<option value=" + i + ">" + i + "</option>" )
+            }
+          </script>
+        </select>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
