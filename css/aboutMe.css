@@ -1,0 +1,24 @@
+h1{
+    color: rgb(125,255,150);
+}
+#a stands for alpha
+h1{
+    color: rgba(125,25,255,1);
+}
+h2{
+    color: rgb(100,0,100);
+}
+h2{
+    color: rgba(125,25,255,.6);
+    background-color: pink;
+}
+
+h3{
+    color: rgb(11,99,150);
+}
+h3{
+    color: rgba(11,99,150,.4);
+}
+li{
+    color: darkblue;
+}
